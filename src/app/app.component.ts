@@ -9,11 +9,12 @@ import { PokedexService } from './pokedex.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  public pokemon: any;
+  public pokemonList: any;
   constructor(private pokedexService: PokedexService){}
   ngOnInit(){
     this.pokedexService.getPokemon()
-    .subscribe(pokemons => this.pokemon = pokemons);
-    console.log(this.pokemon)
+    .subscribe(pokemon => this.pokemonList = pokemon);
+    
+
   }
 }

@@ -7,7 +7,7 @@ export class PokedexService {
   constructor( private http: HttpClient) { }
 
   getPokemon(){
-    return this.http.get('http://pokeapi.salestock.net/api/v2/');
+    return this.http.get('http://pokeapi.salestock.net/api/v1/');
 
 
   }
